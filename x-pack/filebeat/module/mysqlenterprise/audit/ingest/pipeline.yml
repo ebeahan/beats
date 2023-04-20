@@ -6,6 +6,7 @@ processors:
 - json:
     field: message
     target_field: mysqlenterprise.audit
+    strict_json_parsing: false
 - remove:
     field: '@timestamp'
     ignore_missing: true
